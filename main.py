@@ -5,6 +5,7 @@ import pandas as pd
 import imghdr
 import cv2
 import tensorflow as tf
+from sklearn.utils import compute_class_weight
 from tensorflow import keras
 from tensorflow.keras import layers, models
 from tensorflow.keras.models import Sequential
@@ -22,6 +23,7 @@ import os.path
 
 import itertools
 from sklearn.metrics import classification_report, confusion_matrix
+from tensorflow.python.keras import regularizers
 
 # Getting data -- MAY HAVE TO CHANGE THIS
 project_directory = os.getcwd()
@@ -53,9 +55,10 @@ for i, ax in enumerate(axes.flat):
 plt.tight_layout()
 plt.show()
 
-# Setting validation split
 train_datagen = ImageDataGenerator(rescale=1./255,
-                                   validation_split=0.2)
+                                   validation_split=0.2
+                                   )
+# Setting validation split
 
 # Setting training data
 train_images = train_datagen.flow_from_directory(
@@ -77,16 +80,16 @@ validation_images = train_datagen.flow_from_directory(
 
 # CNN Model
 model = tf.keras.models.Sequential([
-    Conv2D(16, (3,3), activation = 'relu', input_shape = (224,224, 3)),
+    Conv2D(16, (3,3), activation = 'relu', input_shape = (224,224, 3), kernel_regularizer=regularizers.l1_l2(l1=0.000001, l2=0.000001)),
     MaxPooling2D(2,2),
-    Conv2D(32, (3,3), activation = 'relu'),
+    Conv2D(32, (3,3), activation = 'relu', kernel_regularizer=regularizers.l1_l2(l1=0.000001, l2=0.000001)),
     MaxPooling2D(2,2),
-    Conv2D(32, (3,3), activation = 'relu'),
+    Conv2D(32, (3,3), activation = 'relu', kernel_regularizer=regularizers.l1_l2(l1=0.000001, l2=0.000001)),
     MaxPooling2D(2,2),
-    Conv2D(32, (3,3), activation = 'relu'),
+    Conv2D(32, (3,3), activation = 'relu', kernel_regularizer=regularizers.l1_l2(l1=0.000001, l2=0.000001)),
     MaxPooling2D(2,2),
     Flatten(),
-    Dense(512, activation = 'relu'),
+    Dense(512, activation = 'relu', kernel_regularizer=regularizers.l1_l2(l1=0.000001, l2=0.000001)),
     Dropout(0.2),
     Dense(4, activation = 'softmax')
 ])
@@ -97,3 +100,5 @@ history = model.fit(train_images,
     validation_data=validation_images,
     validation_steps=len(validation_images),
     epochs=10)
+
+model.save("classificationModel.keras")
