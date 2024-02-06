@@ -5,24 +5,18 @@ import pandas as pd
 import imghdr
 import cv2
 import tensorflow as tf
-from sklearn.utils import compute_class_weight
 from tensorflow import keras
 from tensorflow.keras import layers, models
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, Flatten, MaxPooling2D, Dense, Dropout, GlobalAveragePooling2D
-from tensorflow.keras.preprocessing import image
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras import optimizers, losses
-import seaborn as sns
 import matplotlib.pyplot as plt
 
 import PIL
-from PIL import UnidentifiedImageError
 from pathlib import Path
 import os.path
 
 import itertools
-from sklearn.metrics import classification_report, confusion_matrix
 from tensorflow.python.keras import regularizers
 
 # Getting data -- MAY HAVE TO CHANGE THIS
