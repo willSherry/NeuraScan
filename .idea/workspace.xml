@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Model trained and saved - 98% accuracy and 91% validation accuracy. Can improve later but good enough for now.">
-      <change afterPath="$PROJECT_DIR$/preprocess_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/NeuraScan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NeuraScan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Split main into preprocessing file and model file. Started on image preprocessing. Currently facing memory error so will have to look into alternate methods.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modelTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classificationModel.keras" beforeDir="false" afterPath="$PROJECT_DIR$/classificationModel.keras" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocess_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +25,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;willSherry&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0a207af4-6f89-4b35-906e-e65aa3b91fd7" />
+        <option name="url" value="https://github.com/willSherry/NeuraScan.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/preprocess_data.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -42,20 +53,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.preprocess_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Final Year Project/Project/NeuraScan&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.main.executor": "Run",
+    "Python.preprocess_data.executor": "Run",
+    "Python.train_model.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Final Year Project/Project/NeuraScan",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.preprocess_data">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NeuraScan" />
@@ -178,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706622954914</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Split main into preprocessing file and model file. Started on image preprocessing. Currently facing memory error so will have to look into alternate methods.">
+      <option name="closed" value="true" />
+      <created>1707220303694</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707220303694</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -186,12 +205,24 @@
     <MESSAGE value="Improved image loading, set up testing and validation data, created CNN model with 99.12% accuracy." />
     <MESSAGE value="Experimented more with the regularization and achieved an accuracy of 97% and validation accuracy of 91%. Added model saving functionality and model loading. Created modelTest.py to test the model on any image once its finished training." />
     <MESSAGE value="Model trained and saved - 98% accuracy and 91% validation accuracy. Can improve later but good enough for now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Model trained and saved - 98% accuracy and 91% validation accuracy. Can improve later but good enough for now." />
+    <MESSAGE value="Split main into preprocessing file and model file. Started on image preprocessing. Currently facing memory error so will have to look into alternate methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Split main into preprocessing file and model file. Started on image preprocessing. Currently facing memory error so will have to look into alternate methods." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="image_df" />
+        <watch expression="generator.num_classes" />
+        <watch expression="generator.num_classes" />
       </configuration>
     </watches-manager>
   </component>

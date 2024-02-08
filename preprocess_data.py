@@ -2,39 +2,23 @@ import os
 import numpy as np
 import pandas as pd
 import PIL
+import tqdm
 from PIL import UnidentifiedImageError
 from pathlib import Path
 import matplotlib.pyplot as plt
 import cv2
+import tensorflow
 from medpy.filter.smoothing import anisotropic_diffusion
-def load_and_preprocess_data(data_directory):
-    filepaths = list(Path(data_directory).rglob('*.jpg'))
-    labels = list(map(lambda x: os.path.split(os.path.split(x)[0])[1], filepaths))
+from tqdm import tqdm
 
-    filepaths = pd.Series(filepaths, name='Filepath').astype(str)
-    labels = pd.Series(labels, name='Label')
+from train_model import create_and_train_model
+def preprocess_image(img):
+    # Normalizing intensity
+    normalized_image = intensity_normalization(img)
+    # Removing noise
+    noise_removed_image = noise_removal(normalized_image)
 
-    image_df = pd.concat([filepaths, labels], axis=1)
-
-    # Divide pixel values by 255
-    print('Dividing pixel values by 255...')
-    images = []
-    for filepath in filepaths:
-        img = PIL.Image.open(filepath)
-        img = img.resize((224, 224))
-        img = np.asarray(img) / 255.0
-        images.append(img)
-
-    image_df['Image'] = images
-
-    # Intensity Normalization
-    print('Normalizing intensity...')
-    image_df['Image'] = image_df['Image'].apply(intensity_normalization)
-
-    # Noise Removal
-    print('Removing noise...')
-    image_df['Image'] = image_df['Image'].apply(noise_removal)
-    return image_df
+    return noise_removed_image
 
 def intensity_normalization(img):
     min_val = np.min(img)
@@ -45,8 +29,71 @@ def intensity_normalization(img):
 def noise_removal(img):
     gaussian_img = cv2.GaussianBlur(img, (5,5), 0)
     median_img = cv2.medianBlur(gaussian_img, 5)
-    diffused_img = anisotropic_diffusion(median_img)
-    return diffused_img
+    #diffused_img = anisotropic_diffusion(median_img)
+    return median_img
 
-data_directory = os.path.join(os.getcwd(), 'Data')
-image_df = load_and_preprocess_data(data_directory)
+# Getting directories
+project_directory = os.getcwd()
+data_directory = os.path.join(project_directory, 'Data')
+
+# Dividing pixel values by 255 and creating validation split
+print('Dividing pixel values by 255...')
+datagen = tensorflow.keras.preprocessing.image.ImageDataGenerator(rescale=1. / 255,
+                                                                  validation_split=0.2)
+
+# Loading images and splitting 80/20 for training and validation
+print('Loading images...')
+train_generator = datagen.flow_from_directory(
+    data_directory,
+    target_size=(128, 128),
+    batch_size=32,
+    class_mode='categorical',
+    subset='training'
+)
+
+validation_generator = datagen.flow_from_directory(
+    data_directory,
+    target_size=(128, 128),
+    batch_size=32,
+    class_mode='categorical',
+    subset='validation'
+)
+
+def preprocess_generator(generator):
+    preprocessed_images = []
+    labels = []
+    iterations = 0
+    numberOfImages = len(generator)
+    for images, batch_labels in tqdm(generator, desc="Preprocessing images", total=numberOfImages):
+        preprocessed_batch = []
+        for img in images:
+            iterations += 1
+            preprocessed_batch.append(preprocess_image(img))
+            if iterations >= numberOfImages:
+                break
+        preprocessed_images.append(np.array(preprocessed_batch))
+        labels.extend(batch_labels)
+        if iterations >= numberOfImages:
+            break
+    return np.concatenate(preprocessed_images), np.array(labels)
+
+print("Preprocessing training images...")
+preprocessed_training_images = preprocess_generator(train_generator)
+
+print("Preprocessing validation images...")
+preprocessed_validation_images = preprocess_generator(validation_generator)
+
+def generate_data(generator):
+    while True:
+        images, labels = next(generator)
+        yield {'conv2d_input': images}, labels
+
+# Train the model using custom data generators
+train_data_generator = generate_data(train_generator)
+validation_data_generator = generate_data(validation_generator)
+
+train_gen_length = len(train_generator)
+validation_gen_length = len(validation_generator)
+
+create_and_train_model(train_data_generator, validation_data_generator,
+                       train_gen_length, validation_gen_length)
