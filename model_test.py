@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 from preprocess_data import preprocess_image
 
 project_directory = os.getcwd()
-data_directory = os.path.join(project_directory, 'Data')
+test_data_directory = os.path.join(project_directory, 'TestData')
 
 def load_trained_model(model_path):
     model = load_model(model_path)
@@ -13,9 +13,8 @@ def load_trained_model(model_path):
 
 def predict_single_image(model, image_path, target_size=(128, 128)):
     img = cv2.imread(image_path)
-    preprocessed_img = preprocess_image(img)
 
-    preprocessed_img = cv2.resize(preprocessed_img, target_size)
+    preprocessed_img = cv2.resize(img, target_size)
 
     preprocessed_img = np.expand_dims(preprocessed_img, axis=0)
 
@@ -37,7 +36,7 @@ def predict_single_image(model, image_path, target_size=(128, 128)):
 if __name__ == "__main__":
     model_path = os.path.join(project_directory,"classificationModel.keras")
 
-    image_path = os.path.join(data_directory,"ModerateDemented\\0b1b32a8-553c-4eaa-a356-1226d90dc031.jpg")
+    image_path = os.path.join(test_data_directory,"veryMildDemented3.jpg")
 
     model = load_trained_model(model_path)
 
