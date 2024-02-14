@@ -43,12 +43,19 @@ def explain_image(img, predicted_class):
                                                 positive_only=False,
                                                 num_features=show_pros_cons_value,
                                                 hide_rest=hide_rest_value,
-                                                min_weight=0.15)
+                                                min_weight=0.1)
 
     # plt.imshow(mark_boundaries(temp / 2 + 0.5, mask))
     plt.imshow(mark_boundaries(temp / 2 + 0.5, mask))
     plt.title("Predicted Class: " + predicted_class)
     plt.show()
 
+    ind = explanation.top_labels[0]
+    dict_heatmap = dict(explanation.local_exp[ind])
+    heatmap = np.vectorize(dict_heatmap.get)(explanation.segments)
+
+    plt.imshow(heatmap, cmap = 'RdBu', vmin = -heatmap.max(), vmax = heatmap.max())
+    plt.colorbar()
+    plt.show()
 # test_image = os.path.join(test_data_directory, "test2.jpg")
 # explain_image(test_image)
