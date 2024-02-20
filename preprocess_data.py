@@ -4,7 +4,9 @@ import tqdm
 import cv2
 import tensorflow
 from tqdm import tqdm
-from tensorflow.keras.preprocessing import image
+import tensorflow
+from tensorflow import keras
+from keras.preprocessing import image
 from train_model import create_and_train_model
 import matplotlib.pyplot as plt
 

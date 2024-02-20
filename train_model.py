@@ -1,6 +1,7 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Conv2D, Flatten, MaxPooling2D, Dense, Dropout
-from tensorflow.keras import regularizers
+from tensorflow import keras
+from keras.layers import Conv2D, Flatten, MaxPooling2D, Dense, Dropout
+from keras import regularizers
 import math
 
 def create_and_train_model(train_data_generator, validation_data_generator, train_len, val_len):

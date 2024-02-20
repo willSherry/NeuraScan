@@ -3,7 +3,9 @@ import sys
 
 import numpy as np
 import cv2
-from tensorflow.keras.models import load_model
+import tensorflow
+from tensorflow import keras
+from keras.models import load_model
 
 import lime_integration
 from preprocess_data import preprocess_image
@@ -40,7 +42,7 @@ def predict_single_image(model, image_path):
 if __name__ == "__main__":
     model_path = os.path.join(project_directory,"classificationModel.keras")
 
-    image_path = os.path.join(test_data_directory,"test2.jpg")
+    image_path = os.path.join(test_data_directory,"mildDemented4.jpg")
 
 
     model = load_trained_model(model_path)
