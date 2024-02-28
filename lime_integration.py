@@ -17,21 +17,12 @@ deep_model = load_model(model_path)
 explainer = lime_image.LimeImageExplainer()
 
 # LIME result options
-hide_rest_value = False
+hide_rest_value = False # If true, only the parts recognised by LIME are displayed and the rest is hidden
 show_pros_cons = True
 show_pros_cons_value = 10 # 10 if they want pros and cons, 5 if not
 def explain_image(img, predicted_class):
-    img = Image.open(img)
-    target_size = (128, 128)
 
-    preprocessed_image = img.convert("RGB")
-    preprocessed_image = np.array(preprocessed_image) / 255.0
-    preprocessed_image = cv2.resize(preprocessed_image, target_size)
-    if len(preprocessed_image.shape) == 3:
-        preprocessed_image = np.expand_dims(preprocessed_image, axis=0)
-    preprocessed_image = np.repeat(preprocessed_image, 1, axis=-1)
-
-    explanation = explainer.explain_instance(preprocessed_image[0], deep_model.predict, top_labels=5,
+    explanation = explainer.explain_instance(img[0], deep_model.predict, top_labels=5,
                                              hide_color=0, num_samples=1000)
     if show_pros_cons == True:
         show_pros_cons_value = 10
@@ -46,6 +37,7 @@ def explain_image(img, predicted_class):
                                                 min_weight=0.1)
 
     # plt.imshow(mark_boundaries(temp / 2 + 0.5, mask))
+    explained_image = mark_boundaries(temp / 2 + 0.5, mask)
     plt.imshow(mark_boundaries(temp / 2 + 0.5, mask))
     plt.title("Predicted Class: " + predicted_class)
     plt.show()
@@ -54,8 +46,10 @@ def explain_image(img, predicted_class):
     dict_heatmap = dict(explanation.local_exp[ind])
     heatmap = np.vectorize(dict_heatmap.get)(explanation.segments)
 
-    plt.imshow(heatmap, cmap = 'RdBu', vmin = -heatmap.max(), vmax = heatmap.max())
-    plt.colorbar()
-    plt.show()
+    # plt.imshow(heatmap, cmap = 'RdBu', vmin = -heatmap.max(), vmax = heatmap.max())
+    # plt.colorbar()
+    # plt.show()
+
+    return heatmap, explained_image
 # test_image = os.path.join(test_data_directory, "test2.jpg")
 # explain_image(test_image)

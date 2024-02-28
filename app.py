@@ -1,35 +1,56 @@
-import app
 import cv2
-from flask import Flask, request, jsonify, render_template
-
+import tensorflow as tf
 from tensorflow import keras
-from keras.models import load_model
-
+from tensorflow.keras.models import load_model
 from model_test import preprocess_single_image
+from model_test import predict_single_image
+from lime_integration import explain_image
+import streamlit as st
+import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
 
-app = Flask(__name__)
+model = load_model("classificationModel.keras")
 
-image_model = load_model('classificationModel.keras')
+img = st.file_uploader(label="Upload or drag brain scan here!", type=['png', 'jpg', 'jpeg'])
+#img = 'D:\\Final Year Project\\Project\\NeuraScan\\TestData\\moderateDemented1.jpg'
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+if img is not None:
+    img = Image.open(img)
+    st.image(img, use_column_width=True)
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    if 'file' not in request.files:
-        return jsonify({'error': 'No file part'})
+    img = img.resize((128, 128))
+    img = np.asarray(img)
+    img = img / 255.0
 
-    file = request.files['file']
-    if file.filename == '':
-        return jsonify({'error': 'No selected file'})
+    # CHECK IF IT ALREADY HAS ALL THE DIMS BEFORE DOING THIS
+    if img.shape[-1] == 128:
+        img = np.expand_dims(img, axis=-1)
+    if img.shape[0] == 128:
+        img = np.expand_dims(img, axis=0)
 
-    # Passing the image to the model for prediction
-    print('We got here at least')
-    scan = preprocess_single_image(file)
-    prediction = image_model.predict(scan)
+    if img.shape[-1] != 3:
+        img = np.repeat(img, 3, axis=3)
 
-    return jsonify({'prediction': prediction})
+    prediction, confidence = predict_single_image(model, img)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+    st.write(f"Prediction is: {prediction} \nConfidence: {confidence*100}%")
+
+    heatmap, explained_image = explain_image(img, prediction)
+
+    fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+
+    heatmap_plot = axes[0].imshow(heatmap, cmap='RdBu', vmin=-heatmap.max(), vmax=heatmap.max())
+    axes[0].set_title('Heatmap')
+
+    regular_plot = axes[1].imshow(explained_image)
+    axes[1].set_title('Explained Image')
+    fig.colorbar(heatmap_plot, ax=axes[0])
+
+    for ax in axes:
+        ax.set_xticks([])
+        ax.set_yticks([])
+
+    fig.suptitle(f"Prediction: {prediction}\nConfidence: {round(confidence*100, 2)}%")
+
+    st.pyplot(fig)
