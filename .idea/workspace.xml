@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working">
-      <change afterPath="$PROJECT_DIR$/TestData/app2.py" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Created the web app via streamlit. Website is in basic functional order!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lime_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/lime_integration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,25 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.app.executor": "Run",
-    "Python.lime_integration.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.model_test.executor": "Debug",
-    "Python.preprocess_data.executor": "Run",
-    "Python.preprocess_image.executor": "Run",
-    "Python.skull_stripping.executor": "Run",
-    "Python.train_model.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Final Year Project/Project/NeuraScan/app.py",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lime_integration.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_test.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.preprocess_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess_image.executor&quot;: &quot;Run&quot;,
+    &quot;Python.skull_stripping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Final Year Project/TEST CAN DELETE SOON&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuraScan" />
@@ -321,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708436285693</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Created the web app via streamlit. Website is in basic functional order!">
+      <option name="closed" value="true" />
+      <created>1709133050893</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709133050893</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -335,7 +339,8 @@
     <MESSAGE value="Removed the preprocessing of the preprocessing of the single image as an experiment, and now the model is making perfect predictions. removing noise and normalizing intensity seemed to work just fine for the training data and improved accuracy there, but doing it for the subject image seems to ruin the prediction. Strange." />
     <MESSAGE value="Removed main.py, don't need it anymore as the preprocessing and training/creation of the model have been split into two separate files. Added LIME integration and testing for the LIME file in model_test.py." />
     <MESSAGE value="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working" />
+    <MESSAGE value="Created the web app via streamlit. Website is in basic functional order!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the web app via streamlit. Website is in basic functional order!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
