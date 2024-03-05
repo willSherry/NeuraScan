@@ -1,3 +1,5 @@
+import os
+
 import cv2
 import tensorflow as tf
 from tensorflow import keras
@@ -10,7 +12,11 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-page_bg_img = """
+project_path = os.getcwd()
+symbol_path = os.path.join(project_path, 'symbol.JPG')
+symbol = Image.open(symbol_path)
+
+page_appearance = """
 <style>
 [data-testid="stAppViewContainer"] {
   width: 100%;
@@ -40,13 +46,15 @@ p {
     text-align: center;
 } 
 
-
 }
 </style>
+<head>
+    <link rel="icon" type="image/jpg" href="symbol.JPG">
+</head>
 """
 
-st.set_page_config(page_title="NeuraScan")
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.set_page_config(page_title="NeuraScan", page_icon="🔍")
+st.markdown(page_appearance, unsafe_allow_html=True)
 
 st.title("NeuraScan")
 st.write("Upload or drag and drop your brain scan here.")
