@@ -22,6 +22,7 @@ page_bg_img = """
 
 [data-testid="StyledLinkIconContainer"]{
 text-align: center;
+font-size: 44px;
 } 
 
 [data-testid="stMarkdown"]{
@@ -34,11 +35,19 @@ p {
     text-align: center;
 } 
 
+[data-testid="element-container"]{
+p {
+    text-align: center;
+} 
+
+
 }
 </style>
 """
 
+st.set_page_config(page_title="NeuraScan")
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.title("NeuraScan")
 st.write("Upload or drag and drop your brain scan here.")
 
@@ -74,10 +83,13 @@ if img is not None:
     else:
         prediction = "Moderate Demented"
 
-    st.write(f"Prediction is: {prediction}")
-    st.write(f"Confidence: {confidence*100}%")
+    st.subheader(f"Prediction is: {prediction}")
+    st.subheader(f"Confidence: {round(confidence*100, 4)}%")
 
-    heatmap, explained_image = explain_image(img, prediction)
+    with st.spinner("Generating explanation, please wait..."):
+        heatmap, explained_image = explain_image(img, prediction)
+
+    st.spinner(False)
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 5))
 
@@ -92,8 +104,9 @@ if img is not None:
         ax.set_xticks([])
         ax.set_yticks([])
 
-    fig.suptitle(f"Prediction: {prediction}\nConfidence: {round(confidence*100, 2)}%")
+    fig.suptitle(f"Prediction: {prediction}\nConfidence: {round(confidence*100, 4)}%")
 
     st.pyplot(fig)
 
+st.subheader("What is NeuraScan?")
 st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
