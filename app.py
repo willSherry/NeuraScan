@@ -1,10 +1,6 @@
 import os
 
-import cv2
-import tensorflow as tf
-from tensorflow import keras
 from tensorflow.keras.models import load_model
-from model_test import preprocess_single_image
 from model_test import predict_single_image
 from lime_integration import explain_image
 import streamlit as st
