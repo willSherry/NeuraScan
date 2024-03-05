@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Created the web app via streamlit. Website is in basic functional order!">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Created basic website layout.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
@@ -325,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709133050893</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Created basic website layout.">
+      <option name="closed" value="true" />
+      <created>1709593315279</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709593315279</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -340,7 +348,8 @@
     <MESSAGE value="Removed main.py, don't need it anymore as the preprocessing and training/creation of the model have been split into two separate files. Added LIME integration and testing for the LIME file in model_test.py." />
     <MESSAGE value="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working" />
     <MESSAGE value="Created the web app via streamlit. Website is in basic functional order!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the web app via streamlit. Website is in basic functional order!" />
+    <MESSAGE value="Created basic website layout." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created basic website layout." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
