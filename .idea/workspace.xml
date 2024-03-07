@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Removed unneeded dependencies">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="added requirements.txt back, it was a mistake getting rid of it last time.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -385,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709647176961</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added requirements.txt back, it was a mistake getting rid of it last time.">
+      <option name="closed" value="true" />
+      <created>1709647361430</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709647361430</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -406,7 +415,8 @@
     <MESSAGE value="Added requirements.txt" />
     <MESSAGE value="Reversing azure deployment" />
     <MESSAGE value="Removed unneeded dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unneeded dependencies" />
+    <MESSAGE value="added requirements.txt back, it was a mistake getting rid of it last time." />
+    <option name="LAST_COMMIT_MESSAGE" value="added requirements.txt back, it was a mistake getting rid of it last time." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
