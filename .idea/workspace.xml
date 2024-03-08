@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Reworked requirements.txt">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Just praying at this point">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -473,11 +473,18 @@
       <option name="project" value="LOCAL" />
       <updated>1709897471818</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Just praying at this point">
+      <option name="closed" value="true" />
+      <created>1709917543684</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1709917543684</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Experimented more with the regularization and achieved an accuracy of 97% and validation accuracy of 91%. Added model saving functionality and model loading. Created modelTest.py to test the model on any image once its finished training." />
     <MESSAGE value="Model trained and saved - 98% accuracy and 91% validation accuracy. Can improve later but good enough for now." />
     <MESSAGE value="Split main into preprocessing file and model file. Started on image preprocessing. Currently facing memory error so will have to look into alternate methods." />
     <MESSAGE value="Finished preprocessing, fixed issue with the memory, successfully got it into a format that the model could train from, got 97% accuracy with 93% validation accuracy." />
@@ -502,7 +509,8 @@
     <MESSAGE value="installing libgl1-mesa-glx" />
     <MESSAGE value="Didnt work. Have to find alternative method" />
     <MESSAGE value="Reworked requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reworked requirements.txt" />
+    <MESSAGE value="Just praying at this point" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just praying at this point" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
