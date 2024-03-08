@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="packages.txt is gone">
-      <change afterPath="$PROJECT_DIR$/packages.txt" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Didnt work. Have to find alternative method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
@@ -210,9 +209,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.lime_integration" />
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.model_test" />
       <item itemvalue="Python.preprocess_image" />
       <item itemvalue="Python.skull_stripping" />
@@ -451,11 +450,26 @@
       <option name="project" value="LOCAL" />
       <updated>1709894763409</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="installing libgl1-mesa-glx">
+      <option name="closed" value="true" />
+      <created>1709895413507</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1709895413507</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Didnt work. Have to find alternative method">
+      <option name="closed" value="true" />
+      <created>1709895826500</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1709895826500</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit - set up all packages, removed any dodgy images from the dataset, loaded the images" />
     <MESSAGE value="Improved image loading, set up testing and validation data, created CNN model with 99.12% accuracy." />
     <MESSAGE value="Experimented more with the regularization and achieved an accuracy of 97% and validation accuracy of 91%. Added model saving functionality and model loading. Created modelTest.py to test the model on any image once its finished training." />
     <MESSAGE value="Model trained and saved - 98% accuracy and 91% validation accuracy. Can improve later but good enough for now." />
@@ -479,7 +493,9 @@
     <MESSAGE value="didnt work, made it worse" />
     <MESSAGE value="does this make any difference." />
     <MESSAGE value="packages.txt is gone" />
-    <option name="LAST_COMMIT_MESSAGE" value="packages.txt is gone" />
+    <MESSAGE value="installing libgl1-mesa-glx" />
+    <MESSAGE value="Didnt work. Have to find alternative method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Didnt work. Have to find alternative method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
