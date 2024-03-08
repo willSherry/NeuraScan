@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="replacing opencv with opencv headless">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="didnt work, made it worse">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -402,7 +401,39 @@
       <option name="project" value="LOCAL" />
       <updated>1709850549802</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="adding regular opencv back, having issue with deployment">
+      <option name="closed" value="true" />
+      <created>1709852532613</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1709852532613</updated>
+    </task>
+    <task id="LOCAL-00022" summary="adding regular opencv back, having issue with deployment">
+      <option name="closed" value="true" />
+      <created>1709852536844</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1709852536844</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Still having issues, experimenting with packages.txt">
+      <option name="closed" value="true" />
+      <created>1709856524381</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709856524381</updated>
+    </task>
+    <task id="LOCAL-00024" summary="didnt work, made it worse">
+      <option name="closed" value="true" />
+      <created>1709856808833</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1709856808833</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -425,7 +456,10 @@
     <MESSAGE value="Removed unneeded dependencies" />
     <MESSAGE value="added requirements.txt back, it was a mistake getting rid of it last time." />
     <MESSAGE value="replacing opencv with opencv headless" />
-    <option name="LAST_COMMIT_MESSAGE" value="replacing opencv with opencv headless" />
+    <MESSAGE value="adding regular opencv back, having issue with deployment" />
+    <MESSAGE value="Still having issues, experimenting with packages.txt" />
+    <MESSAGE value="didnt work, made it worse" />
+    <option name="LAST_COMMIT_MESSAGE" value="didnt work, made it worse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
