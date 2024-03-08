@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="didnt work, made it worse">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="packages.txt is gone">
+      <change afterPath="$PROJECT_DIR$/packages.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -433,7 +435,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709856808833</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="does this make any difference.">
+      <option name="closed" value="true" />
+      <created>1709894191461</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1709894191461</updated>
+    </task>
+    <task id="LOCAL-00026" summary="packages.txt is gone">
+      <option name="closed" value="true" />
+      <created>1709894763409</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1709894763409</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -459,7 +477,9 @@
     <MESSAGE value="adding regular opencv back, having issue with deployment" />
     <MESSAGE value="Still having issues, experimenting with packages.txt" />
     <MESSAGE value="didnt work, made it worse" />
-    <option name="LAST_COMMIT_MESSAGE" value="didnt work, made it worse" />
+    <MESSAGE value="does this make any difference." />
+    <MESSAGE value="packages.txt is gone" />
+    <option name="LAST_COMMIT_MESSAGE" value="packages.txt is gone" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
