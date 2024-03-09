@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Created basic website layout.">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="please work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +16,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;willSherry&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
     &quot;assignee&quot;: &quot;willSherry&quot;
   }
 }</component>
@@ -51,48 +56,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lime_integration.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.model_test.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.preprocess_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.preprocess_image.executor&quot;: &quot;Run&quot;,
-    &quot;Python.skull_stripping.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Final Year Project/TEST CAN DELETE SOON&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "Python.lime_integration.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.model_test.executor": "Debug",
+    "Python.preprocess_data.executor": "Run",
+    "Python.preprocess_image.executor": "Run",
+    "Python.skull_stripping.executor": "Run",
+    "Python.train_model.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Final Year Project/TEST CAN DELETE SOON",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.app">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="NeuraScan" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="streamlit run app.py" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Python.wsgi">
     <configuration name="lime_integration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuraScan" />
       <option name="ENV_FILES" value="" />
@@ -203,9 +187,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="wsgi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NeuraScan" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\Final Year Project\Project\NeuraScan\wsgi.py" />
+      <option name="PARAMETERS" value="streamlit run app.py" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.app" />
+      <item itemvalue="Python.wsgi" />
       <item itemvalue="Python.lime_integration" />
       <item itemvalue="Python.model_test" />
       <item itemvalue="Python.preprocess_image" />
@@ -213,7 +219,7 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
+        <item itemvalue="Python.wsgi" />
         <item itemvalue="Python.model_test" />
         <item itemvalue="Python.preprocess_image" />
         <item itemvalue="Python.skull_stripping" />
@@ -333,23 +339,220 @@
       <option name="project" value="LOCAL" />
       <updated>1709593315279</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Minor changes. Changed size of some text and added a loading spinner.">
+      <option name="closed" value="true" />
+      <created>1709634361654</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709634361654</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Minor changes. Changed size of some text and added a loading spinner.">
+      <option name="closed" value="true" />
+      <created>1709634368033</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709634368033</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Deploying to azure test">
+      <option name="closed" value="true" />
+      <created>1709642785190</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709642785190</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added requirements.txt">
+      <option name="closed" value="true" />
+      <created>1709645851693</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709645851693</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Reversing azure deployment">
+      <option name="closed" value="true" />
+      <created>1709646807290</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709646807290</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Removed unneeded dependencies">
+      <option name="closed" value="true" />
+      <created>1709647176961</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709647176961</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added requirements.txt back, it was a mistake getting rid of it last time.">
+      <option name="closed" value="true" />
+      <created>1709647361430</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709647361430</updated>
+    </task>
+    <task id="LOCAL-00020" summary="replacing opencv with opencv headless">
+      <option name="closed" value="true" />
+      <created>1709850549802</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709850549802</updated>
+    </task>
+    <task id="LOCAL-00021" summary="adding regular opencv back, having issue with deployment">
+      <option name="closed" value="true" />
+      <created>1709852532613</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1709852532613</updated>
+    </task>
+    <task id="LOCAL-00022" summary="adding regular opencv back, having issue with deployment">
+      <option name="closed" value="true" />
+      <created>1709852536844</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1709852536844</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Still having issues, experimenting with packages.txt">
+      <option name="closed" value="true" />
+      <created>1709856524381</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709856524381</updated>
+    </task>
+    <task id="LOCAL-00024" summary="didnt work, made it worse">
+      <option name="closed" value="true" />
+      <created>1709856808833</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1709856808833</updated>
+    </task>
+    <task id="LOCAL-00025" summary="does this make any difference.">
+      <option name="closed" value="true" />
+      <created>1709894191461</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1709894191461</updated>
+    </task>
+    <task id="LOCAL-00026" summary="packages.txt is gone">
+      <option name="closed" value="true" />
+      <created>1709894763409</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1709894763409</updated>
+    </task>
+    <task id="LOCAL-00027" summary="installing libgl1-mesa-glx">
+      <option name="closed" value="true" />
+      <created>1709895413507</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1709895413507</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Didnt work. Have to find alternative method">
+      <option name="closed" value="true" />
+      <created>1709895826500</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1709895826500</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Reworked requirements.txt">
+      <option name="closed" value="true" />
+      <created>1709897471818</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1709897471818</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Just praying at this point">
+      <option name="closed" value="true" />
+      <created>1709917543684</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1709917543684</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Just praying at this point">
+      <option name="closed" value="true" />
+      <created>1709919141819</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1709919141819</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Reversed pyinstaller">
+      <option name="closed" value="true" />
+      <created>1709940615420</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1709940615420</updated>
+    </task>
+    <task id="LOCAL-00033" summary="created flask app">
+      <option name="closed" value="true" />
+      <created>1709990240616</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1709990240616</updated>
+    </task>
+    <task id="LOCAL-00034" summary="added startup.txt">
+      <option name="closed" value="true" />
+      <created>1709991482340</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1709991482340</updated>
+    </task>
+    <task id="LOCAL-00035" summary="please work">
+      <option name="closed" value="true" />
+      <created>1709995335384</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1709995335384</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit - set up all packages, removed any dodgy images from the dataset, loaded the images" />
-    <MESSAGE value="Improved image loading, set up testing and validation data, created CNN model with 99.12% accuracy." />
-    <MESSAGE value="Experimented more with the regularization and achieved an accuracy of 97% and validation accuracy of 91%. Added model saving functionality and model loading. Created modelTest.py to test the model on any image once its finished training." />
-    <MESSAGE value="Model trained and saved - 98% accuracy and 91% validation accuracy. Can improve later but good enough for now." />
-    <MESSAGE value="Split main into preprocessing file and model file. Started on image preprocessing. Currently facing memory error so will have to look into alternate methods." />
-    <MESSAGE value="Finished preprocessing, fixed issue with the memory, successfully got it into a format that the model could train from, got 97% accuracy with 93% validation accuracy." />
-    <MESSAGE value="Created model_test.py to preprocess and test the model on individual images. Came across an issue when I did this, however. The predictions are coming out totally wrong. Need to see if its a problem with the model testing code or an issue with the model itself." />
     <MESSAGE value="Removed the preprocessing of the preprocessing of the single image as an experiment, and now the model is making perfect predictions. removing noise and normalizing intensity seemed to work just fine for the training data and improved accuracy there, but doing it for the subject image seems to ruin the prediction. Strange." />
     <MESSAGE value="Removed main.py, don't need it anymore as the preprocessing and training/creation of the model have been split into two separate files. Added LIME integration and testing for the LIME file in model_test.py." />
     <MESSAGE value="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working" />
     <MESSAGE value="Created the web app via streamlit. Website is in basic functional order!" />
     <MESSAGE value="Created basic website layout." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created basic website layout." />
+    <MESSAGE value="Minor changes. Changed size of some text and added a loading spinner." />
+    <MESSAGE value="Deploying to azure test" />
+    <MESSAGE value="Added requirements.txt" />
+    <MESSAGE value="Reversing azure deployment" />
+    <MESSAGE value="Removed unneeded dependencies" />
+    <MESSAGE value="added requirements.txt back, it was a mistake getting rid of it last time." />
+    <MESSAGE value="replacing opencv with opencv headless" />
+    <MESSAGE value="adding regular opencv back, having issue with deployment" />
+    <MESSAGE value="Still having issues, experimenting with packages.txt" />
+    <MESSAGE value="didnt work, made it worse" />
+    <MESSAGE value="does this make any difference." />
+    <MESSAGE value="packages.txt is gone" />
+    <MESSAGE value="installing libgl1-mesa-glx" />
+    <MESSAGE value="Didnt work. Have to find alternative method" />
+    <MESSAGE value="Reworked requirements.txt" />
+    <MESSAGE value="Just praying at this point" />
+    <MESSAGE value="Reversed pyinstaller" />
+    <MESSAGE value="created flask app" />
+    <MESSAGE value="added startup.txt" />
+    <MESSAGE value="please work" />
+    <option name="LAST_COMMIT_MESSAGE" value="please work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
