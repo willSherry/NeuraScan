@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="created flask app">
-      <change afterPath="$PROJECT_DIR$/startup.txt" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="added startup.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -508,11 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1709990240616</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added startup.txt">
+      <option name="closed" value="true" />
+      <created>1709991482340</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1709991482340</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished preprocessing, fixed issue with the memory, successfully got it into a format that the model could train from, got 97% accuracy with 93% validation accuracy." />
     <MESSAGE value="Created model_test.py to preprocess and test the model on individual images. Came across an issue when I did this, however. The predictions are coming out totally wrong. Need to see if its a problem with the model testing code or an issue with the model itself." />
     <MESSAGE value="Removed the preprocessing of the preprocessing of the single image as an experiment, and now the model is making perfect predictions. removing noise and normalizing intensity seemed to work just fine for the training data and improved accuracy there, but doing it for the subject image seems to ruin the prediction. Strange." />
     <MESSAGE value="Removed main.py, don't need it anymore as the preprocessing and training/creation of the model have been split into two separate files. Added LIME integration and testing for the LIME file in model_test.py." />
@@ -537,7 +545,8 @@
     <MESSAGE value="Just praying at this point" />
     <MESSAGE value="Reversed pyinstaller" />
     <MESSAGE value="created flask app" />
-    <option name="LAST_COMMIT_MESSAGE" value="created flask app" />
+    <MESSAGE value="added startup.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="added startup.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
