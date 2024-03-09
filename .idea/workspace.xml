@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Streamlit deployment test">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Streamlit deployment test 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -556,11 +556,18 @@
       <option name="project" value="LOCAL" />
       <updated>1709998305818</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Streamlit deployment test 2">
+      <option name="closed" value="true" />
+      <created>1709998700714</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1709998700714</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working" />
     <MESSAGE value="Created the web app via streamlit. Website is in basic functional order!" />
     <MESSAGE value="Created basic website layout." />
     <MESSAGE value="Minor changes. Changed size of some text and added a loading spinner." />
@@ -585,7 +592,8 @@
     <MESSAGE value="please work" />
     <MESSAGE value="Reverting to simpler, better version" />
     <MESSAGE value="Streamlit deployment test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Streamlit deployment test" />
+    <MESSAGE value="Streamlit deployment test 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Streamlit deployment test 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
