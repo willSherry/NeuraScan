@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Reversed pyinstaller">
-      <change afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="created flask app">
+      <change afterPath="$PROJECT_DIR$/startup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -501,11 +500,18 @@
       <option name="project" value="LOCAL" />
       <updated>1709940615420</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="created flask app">
+      <option name="closed" value="true" />
+      <created>1709990240616</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1709990240616</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Split main into preprocessing file and model file. Started on image preprocessing. Currently facing memory error so will have to look into alternate methods." />
     <MESSAGE value="Finished preprocessing, fixed issue with the memory, successfully got it into a format that the model could train from, got 97% accuracy with 93% validation accuracy." />
     <MESSAGE value="Created model_test.py to preprocess and test the model on individual images. Came across an issue when I did this, however. The predictions are coming out totally wrong. Need to see if its a problem with the model testing code or an issue with the model itself." />
     <MESSAGE value="Removed the preprocessing of the preprocessing of the single image as an experiment, and now the model is making perfect predictions. removing noise and normalizing intensity seemed to work just fine for the training data and improved accuracy there, but doing it for the subject image seems to ruin the prediction. Strange." />
@@ -530,7 +536,8 @@
     <MESSAGE value="Reworked requirements.txt" />
     <MESSAGE value="Just praying at this point" />
     <MESSAGE value="Reversed pyinstaller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reversed pyinstaller" />
+    <MESSAGE value="created flask app" />
+    <option name="LAST_COMMIT_MESSAGE" value="created flask app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
