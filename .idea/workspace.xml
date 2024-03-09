@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Reverting to simpler, better version">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Streamlit deployment test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -549,11 +548,18 @@
       <option name="project" value="LOCAL" />
       <updated>1709997388134</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Streamlit deployment test">
+      <option name="closed" value="true" />
+      <created>1709998305818</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1709998305818</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed main.py, don't need it anymore as the preprocessing and training/creation of the model have been split into two separate files. Added LIME integration and testing for the LIME file in model_test.py." />
     <MESSAGE value="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working" />
     <MESSAGE value="Created the web app via streamlit. Website is in basic functional order!" />
     <MESSAGE value="Created basic website layout." />
@@ -578,7 +584,8 @@
     <MESSAGE value="added startup.txt" />
     <MESSAGE value="please work" />
     <MESSAGE value="Reverting to simpler, better version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reverting to simpler, better version" />
+    <MESSAGE value="Streamlit deployment test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Streamlit deployment test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
