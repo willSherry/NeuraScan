@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Recreated requirements.txt">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="requirements.txt version fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -611,11 +612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710071876802</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="requirements.txt version fixes">
+      <option name="closed" value="true" />
+      <created>1710072131982</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1710072131982</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Deploying to azure test" />
     <MESSAGE value="Added requirements.txt" />
     <MESSAGE value="Reversing azure deployment" />
     <MESSAGE value="Removed unneeded dependencies" />
@@ -640,7 +648,8 @@
     <MESSAGE value="requirements.txt has had an upgrade using help from pip freeze" />
     <MESSAGE value="Got the app back to a basic functional stage." />
     <MESSAGE value="Recreated requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recreated requirements.txt" />
+    <MESSAGE value="requirements.txt version fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt version fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
