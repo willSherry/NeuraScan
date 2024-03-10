@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="requirements.txt has had an upgrade using help from pip freeze">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Got the app back to a basic functional stage.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -597,11 +596,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710001382512</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Got the app back to a basic functional stage.">
+      <option name="closed" value="true" />
+      <created>1710070594880</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1710070594880</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created basic website layout." />
     <MESSAGE value="Minor changes. Changed size of some text and added a loading spinner." />
     <MESSAGE value="Deploying to azure test" />
     <MESSAGE value="Added requirements.txt" />
@@ -626,7 +632,8 @@
     <MESSAGE value="Streamlit deployment test" />
     <MESSAGE value="Streamlit deployment test 2" />
     <MESSAGE value="requirements.txt has had an upgrade using help from pip freeze" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt has had an upgrade using help from pip freeze" />
+    <MESSAGE value="Got the app back to a basic functional stage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Got the app back to a basic functional stage." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
