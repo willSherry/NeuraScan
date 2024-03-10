@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="requirements.txt version fixes">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Removed yml file, Azure is no longer an option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
@@ -628,11 +628,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710072311314</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Removed yml file, Azure is no longer an option">
+      <option name="closed" value="true" />
+      <created>1710072868715</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1710072868715</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added requirements.txt" />
     <MESSAGE value="Reversing azure deployment" />
     <MESSAGE value="Removed unneeded dependencies" />
     <MESSAGE value="added requirements.txt back, it was a mistake getting rid of it last time." />
@@ -657,7 +664,8 @@
     <MESSAGE value="Got the app back to a basic functional stage." />
     <MESSAGE value="Recreated requirements.txt" />
     <MESSAGE value="requirements.txt version fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt version fixes" />
+    <MESSAGE value="Removed yml file, Azure is no longer an option" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed yml file, Azure is no longer an option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
