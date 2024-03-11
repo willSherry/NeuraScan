@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Removed yml file, Azure is no longer an option">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="final fixes to requirements.txt">
+      <change afterPath="$PROJECT_DIR$/tkinterapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lime_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/lime_integration.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,49 +58,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lime_integration.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.model_test.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.preprocess_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.preprocess_image.executor&quot;: &quot;Run&quot;,
-    &quot;Python.skull_stripping.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Final Year Project/TEST CAN DELETE SOON&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "Python.lime_integration.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.model_test.executor": "Debug",
+    "Python.preprocess_data.executor": "Run",
+    "Python.preprocess_image.executor": "Run",
+    "Python.skull_stripping.executor": "Run",
+    "Python.tkinterapp.executor": "Run",
+    "Python.train_model.executor": "Run",
+    "Python.wsgi.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Final Year Project/TEST CAN DELETE SOON",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.wsgi">
-    <configuration name="lime_integration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="NeuraScan" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lime_integration.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Final Year Project\Project\NeuraScan" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.tkinterapp">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="NeuraScan" />
       <option name="ENV_FILES" value="" />
@@ -187,6 +174,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tkinterapp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NeuraScan" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tkinterapp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="wsgi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuraScan" />
       <option name="ENV_FILES" value="" />
@@ -211,7 +220,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.lime_integration" />
+      <item itemvalue="Python.tkinterapp" />
       <item itemvalue="Python.model_test" />
       <item itemvalue="Python.preprocess_image" />
       <item itemvalue="Python.skull_stripping" />
@@ -219,11 +228,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tkinterapp" />
         <item itemvalue="Python.wsgi" />
         <item itemvalue="Python.model_test" />
         <item itemvalue="Python.preprocess_image" />
         <item itemvalue="Python.skull_stripping" />
-        <item itemvalue="Python.lime_integration" />
       </list>
     </recent_temporary>
   </component>
@@ -242,14 +251,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit - set up all packages, removed any dodgy images from the dataset, loaded the images">
-      <option name="closed" value="true" />
-      <created>1706009328252</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1706009328252</updated>
     </task>
     <task id="LOCAL-00002" summary="Improved image loading, set up testing and validation data, created CNN model with 99.12% accuracy.">
       <option name="closed" value="true" />
@@ -635,11 +636,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710072868715</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="final fixes to requirements.txt">
+      <option name="closed" value="true" />
+      <created>1710078786171</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1710078786171</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reversing azure deployment" />
     <MESSAGE value="Removed unneeded dependencies" />
     <MESSAGE value="added requirements.txt back, it was a mistake getting rid of it last time." />
     <MESSAGE value="replacing opencv with opencv headless" />
@@ -664,7 +672,8 @@
     <MESSAGE value="Recreated requirements.txt" />
     <MESSAGE value="requirements.txt version fixes" />
     <MESSAGE value="Removed yml file, Azure is no longer an option" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed yml file, Azure is no longer an option" />
+    <MESSAGE value="final fixes to requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="final fixes to requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

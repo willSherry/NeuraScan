@@ -40,7 +40,7 @@ def explain_image(img, predicted_class):
     explained_image = mark_boundaries(temp / 2 + 0.5, mask)
     plt.imshow(mark_boundaries(temp / 2 + 0.5, mask))
     plt.title("Predicted Class: " + predicted_class)
-    plt.show()
+    #plt.show()
 
     ind = explanation.top_labels[0]
     dict_heatmap = dict(explanation.local_exp[ind])
