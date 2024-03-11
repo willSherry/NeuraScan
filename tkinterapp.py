@@ -1,4 +1,5 @@
 from customtkinter import *
+import tkinter as tk
 from PIL import Image, ImageTk
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,6 +11,18 @@ from lime_integration import explain_image
 app = CTk()
 app.geometry("920x1080")
 app.resizable(False, False)
+app.title("NeuraScan")
+
+ico = Image.open('images/logo.JPG')
+photo = ImageTk.PhotoImage(ico)
+app.wm_iconphoto(False, photo)
+
+bg_image = Image.open("images/wave_background.png")
+bg_image = ImageTk.PhotoImage(bg_image)
+background_image_label = CTkLabel(app, text=" ")
+background_image_label.configure(image=bg_image)
+background_image_label.place(x=0, y=0, relwidth=1, relheight=1)
+
 set_appearance_mode("light")
 
 model = load_model("classificationModel.keras")
@@ -95,7 +108,8 @@ def matplotlib_to_tk_photo(fig):
     buf.seek(0)
     return ImageTk.PhotoImage(Image.open(buf))
 
-btn = CTkButton(master=app, text="Upload Image", command=upload_file, corner_radius=32)
+btn = CTkButton(master=app, text="Upload Image", bg_color="#00A2FF", fg_color="#FFFFFF", text_color="#000000",
+                width=200, height=60, command=upload_file, corner_radius=32, font=("Gill Sans", 24))
 btn.place(relx=0.5, rely=0.2, anchor="center")
 
 neurascan_symbol = CTkLabel(master=app, text="NeuraScan", font=("Arial", 36))

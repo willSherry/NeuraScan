@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="final fixes to requirements.txt">
-      <change afterPath="$PROJECT_DIR$/tkinterapp.py" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Created desktop version of NeuraScan with TKinter">
+      <change afterPath="$PROJECT_DIR$/images/wave_background.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lime_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/lime_integration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkinterapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinterapp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +82,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Final Year Project\Project\NeuraScan\images" />
       <recent name="D:\Final Year Project\Project\NeuraScan" />
     </key>
   </component>
@@ -251,14 +252,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Improved image loading, set up testing and validation data, created CNN model with 99.12% accuracy.">
-      <option name="closed" value="true" />
-      <created>1706137714431</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1706137714431</updated>
     </task>
     <task id="LOCAL-00003" summary="Experimented more with the regularization and achieved an accuracy of 97% and validation accuracy of 91%. Added model saving functionality and model loading. Created modelTest.py to test the model on any image once its finished training.">
       <option name="closed" value="true" />
@@ -644,11 +637,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710078786171</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Created desktop version of NeuraScan with TKinter">
+      <option name="closed" value="true" />
+      <created>1710173790937</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1710173790937</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Removed unneeded dependencies" />
     <MESSAGE value="added requirements.txt back, it was a mistake getting rid of it last time." />
     <MESSAGE value="replacing opencv with opencv headless" />
     <MESSAGE value="adding regular opencv back, having issue with deployment" />
@@ -673,7 +673,8 @@
     <MESSAGE value="requirements.txt version fixes" />
     <MESSAGE value="Removed yml file, Azure is no longer an option" />
     <MESSAGE value="final fixes to requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="final fixes to requirements.txt" />
+    <MESSAGE value="Created desktop version of NeuraScan with TKinter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created desktop version of NeuraScan with TKinter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
