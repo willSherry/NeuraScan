@@ -4,11 +4,13 @@
 
 
 from pathlib import Path
-
-# from tkinter import *
-# Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
-
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, filedialog
+from PIL.Image import Image
+from model_test import predict_single_image
+from keras.models import load_model
+from lime_integration import explain_image
+import matplotlib.pyplot as plt
+import numpy as np
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"D:\Final Year Project\Project\NeuraScan\GUI\assets\frame0")
@@ -181,6 +183,16 @@ image_8 = canvas.create_image(
     image=image_image_8
 )
 
+# SCAN BUTTON HOVER
+image_image_16 = PhotoImage(
+    file=relative_to_assets("ScanButtonHover.png"))
+image_16 = canvas.create_image(
+    1010.0,
+    240.0,
+    image=image_image_16
+)
+
+
 # UPLOAD SCAN TEXT
 image_image_9 = PhotoImage(
     file=relative_to_assets("Upload Scan.png"))
@@ -189,6 +201,67 @@ image_9  = canvas.create_image(
     240.0,
     image=image_image_9
 )
+
+# ------------FUNCTIONALITY------------#
+
+model = load_model('D:\\Final Year Project\\Project\\NeuraScan\\classificationModel.keras')
+
+def upload_file():
+    file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.jpg;*.jpeg;*.png")])
+    if file_path:
+        print("Uploaded file path:", file_path)
+
+        img = Image.open(file_path)
+        img = img.resize((128, 128))
+        img = np.asarray(img)
+        img = img / 255.0
+
+        # CHECK IF IT ALREADY HAS ALL THE DIMS BEFORE DOING THIS
+        if img.shape[-1] == 128:
+            img = np.expand_dims(img, axis=-1)
+        if img.shape[0] == 128:
+            img = np.expand_dims(img, axis=0)
+
+        if img.shape[-1] != 3:
+            img = np.repeat(img, 3, axis=3)
+
+        prediction, confidence = predict_single_image(model, img)
+
+        if prediction == "MildDemented":
+            prediction = "Mild Demented"
+        elif prediction == "NonDemented":
+            prediction = "Non-Demented"
+        elif prediction == "VeryMildDemented":
+            prediction = "Very Mild Demented"
+        else:
+            prediction = "Moderate Demented"
+
+        print(f"Prediction is: {prediction}\nConfidence is: {round(confidence*100, 4)}%")
+
+
+button_pressed_yet = False
+if button_pressed_yet is False:
+    canvas.itemconfig(image_8, state='normal')
+    canvas.itemconfig(image_16, state='hidden')
+
+def button_pressed(event):
+    canvas.itemconfig(image_8, state='hidden')
+    canvas.itemconfig(image_16, state='normal')
+
+def button_released(event):
+    upload_file()
+    canvas.itemconfig(image_8, state='normal')
+    canvas.itemconfig(image_16, state='hidden')
+
+invisible_button = Button(window, image=image_image_9, bg="#00A3FF", activebackground="#49BEFF",
+                          borderwidth=0, width=710, height=70)
+
+invisible_button.bind("<ButtonPress-1>", button_pressed)
+invisible_button.bind("<ButtonRelease-1>", button_released)
+
+# Place the button on the canvas
+canvas.create_window(1010.0, 240.0, window=invisible_button)
+
 
 window.resizable(False, False)
 window.mainloop()

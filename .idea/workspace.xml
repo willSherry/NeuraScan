@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Created desktop version of NeuraScan with TKinter">
-      <change afterPath="$PROJECT_DIR$/GUI/GUI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/Artificial Intelligence.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/Bot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/Brain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/Critical Thinking.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/GreyDecorSq1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/GreyDecorSq2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/Machine Learning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/NeuraScan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/OutputRight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/Prediction is_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/ScanButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/Upload Scan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/What is NeuraScan_.png" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Desktop GUI finished">
+      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/ScanButtonHover.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkinterapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinterapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GUI.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,14 +259,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Experimented more with the regularization and achieved an accuracy of 97% and validation accuracy of 91%. Added model saving functionality and model loading. Created modelTest.py to test the model on any image once its finished training.">
-      <option name="closed" value="true" />
-      <created>1706619917046</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1706619917046</updated>
     </task>
     <task id="LOCAL-00004" summary="Model trained and saved - 98% accuracy and 91% validation accuracy. Can improve later but good enough for now.">
       <option name="closed" value="true" />
@@ -665,11 +644,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710173790937</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Desktop GUI finished">
+      <option name="closed" value="true" />
+      <created>1710241062726</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1710241062727</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added requirements.txt back, it was a mistake getting rid of it last time." />
     <MESSAGE value="replacing opencv with opencv headless" />
     <MESSAGE value="adding regular opencv back, having issue with deployment" />
     <MESSAGE value="Still having issues, experimenting with packages.txt" />
@@ -694,7 +680,8 @@
     <MESSAGE value="Removed yml file, Azure is no longer an option" />
     <MESSAGE value="final fixes to requirements.txt" />
     <MESSAGE value="Created desktop version of NeuraScan with TKinter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created desktop version of NeuraScan with TKinter" />
+    <MESSAGE value="Desktop GUI finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desktop GUI finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
