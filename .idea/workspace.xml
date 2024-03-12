@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Desktop GUI finished">
-      <change afterPath="$PROJECT_DIR$/GUI/assets/frame0/ScanButtonHover.png" afterDir="false" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Got button hover and click functionality working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/GUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/Artificial Intelligence.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/Artificial Intelligence.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/Bot.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/Bot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/Brain.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/Brain.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/Critical Thinking.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/Critical Thinking.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/GreyDecorSq1.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/GreyDecorSq1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/GreyDecorSq2.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/GreyDecorSq2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/Machine Learning.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/Machine Learning.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/NeuraScan.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/NeuraScan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/OutputRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/OutputRight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/Prediction is_.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/Prediction is_.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/ScanButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/ScanButton.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/ScanButtonHover.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/ScanButtonHover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/Upload Scan.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/Upload Scan.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/assets/frame0/What is NeuraScan_.png" beforeDir="false" afterPath="$PROJECT_DIR$/frame0/What is NeuraScan_.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,42 +72,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.GUI.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lime_integration.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.model_test.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.preprocess_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.preprocess_image.executor&quot;: &quot;Run&quot;,
-    &quot;Python.skull_stripping.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tkinterapp.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.wsgi.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Final Year Project/Project/NeuraScan/GUI&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.GUI (1).executor": "Run",
+    "Python.GUI.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.lime_integration.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.model_test.executor": "Debug",
+    "Python.preprocess_data.executor": "Run",
+    "Python.preprocess_image.executor": "Run",
+    "Python.skull_stripping.executor": "Run",
+    "Python.tkinterapp.executor": "Run",
+    "Python.train_model.executor": "Run",
+    "Python.wsgi.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Final Year Project/Project/NeuraScan/GUI",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Final Year Project\Project\NeuraScan\GUI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Final Year Project\Project\NeuraScan" />
       <recent name="D:\Final Year Project\Project\NeuraScan\GUI\assets\frame0" />
       <recent name="D:\Final Year Project\Project\NeuraScan\GUI\assets" />
       <recent name="D:\Final Year Project\Project\NeuraScan\GUI" />
       <recent name="D:\Final Year Project\Project\NeuraScan\images" />
-      <recent name="D:\Final Year Project\Project\NeuraScan" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GUI">
+  <component name="RunManager" selected="Python.GUI (1)">
+    <configuration name="GUI (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NeuraScan" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuraScan" />
       <option name="ENV_FILES" value="" />
@@ -107,7 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI/GUI.py" />
+      <option name="SCRIPT_NAME" value="D:\Final Year Project\Project\NeuraScan\GUI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,28 +189,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="preprocess_image" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="NeuraScan" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess_image.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -228,19 +243,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.GUI (1)" />
       <item itemvalue="Python.GUI" />
       <item itemvalue="Python.tkinterapp" />
       <item itemvalue="Python.model_test" />
-      <item itemvalue="Python.preprocess_image" />
       <item itemvalue="Python.wsgi" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GUI (1)" />
         <item itemvalue="Python.GUI" />
         <item itemvalue="Python.tkinterapp" />
         <item itemvalue="Python.wsgi" />
         <item itemvalue="Python.model_test" />
-        <item itemvalue="Python.preprocess_image" />
       </list>
     </recent_temporary>
   </component>
@@ -259,14 +274,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Model trained and saved - 98% accuracy and 91% validation accuracy. Can improve later but good enough for now.">
-      <option name="closed" value="true" />
-      <created>1706622954914</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1706622954914</updated>
     </task>
     <task id="LOCAL-00005" summary="Split main into preprocessing file and model file. Started on image preprocessing. Currently facing memory error so will have to look into alternate methods.">
       <option name="closed" value="true" />
@@ -652,11 +659,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710241062727</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Got button hover and click functionality working">
+      <option name="closed" value="true" />
+      <created>1710246221931</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1710246221931</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="replacing opencv with opencv headless" />
     <MESSAGE value="adding regular opencv back, having issue with deployment" />
     <MESSAGE value="Still having issues, experimenting with packages.txt" />
     <MESSAGE value="didnt work, made it worse" />
@@ -681,7 +695,8 @@
     <MESSAGE value="final fixes to requirements.txt" />
     <MESSAGE value="Created desktop version of NeuraScan with TKinter" />
     <MESSAGE value="Desktop GUI finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Desktop GUI finished" />
+    <MESSAGE value="Got button hover and click functionality working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got button hover and click functionality working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

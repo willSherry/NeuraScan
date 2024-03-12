@@ -5,7 +5,7 @@
 
 from pathlib import Path
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, filedialog
-from PIL.Image import Image
+from PIL import Image, ImageTk
 from model_test import predict_single_image
 from keras.models import load_model
 from lime_integration import explain_image
@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"D:\Final Year Project\Project\NeuraScan\GUI\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -204,7 +204,7 @@ image_9  = canvas.create_image(
 
 # ------------FUNCTIONALITY------------#
 
-model = load_model('D:\\Final Year Project\\Project\\NeuraScan\\classificationModel.keras')
+model = load_model('classificationModel.keras')
 
 def upload_file():
     file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.jpg;*.jpeg;*.png")])
