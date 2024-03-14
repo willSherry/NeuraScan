@@ -13,7 +13,8 @@ https://github.com/willSherry/NeuraScan
           
         pip install -r requirements.txt
     
-This will install every package required to run NeuraScan.
+This will install every package required to run NeuraScan. <br />
+
 3.  Run NeuraScan.py
 
 ## _Alternatively_

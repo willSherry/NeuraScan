@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Added description.png and icon.ico to git">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neurascan_photo.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/wave_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Created the README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,11 +250,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.NeuraScan (1)" />
       <item itemvalue="Python.NeuraScan" />
-      <item itemvalue="Python.tkinterapp" />
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.model_test" />
+      <item itemvalue="Python.tkinterapp" />
       <item itemvalue="Python.wsgi" />
     </list>
     <recent_temporary>
@@ -288,14 +282,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Removed the preprocessing of the preprocessing of the single image as an experiment, and now the model is making perfect predictions. removing noise and normalizing intensity seemed to work just fine for the training data and improved accuracy there, but doing it for the subject image seems to ruin the prediction. Strange.">
-      <option name="closed" value="true" />
-      <created>1707743188252</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1707743188252</updated>
     </task>
     <task id="LOCAL-00009" summary="Removed main.py, don't need it anymore as the preprocessing and training/creation of the model have been split into two separate files. Added LIME integration and testing for the LIME file in model_test.py.">
       <option name="closed" value="true" />
@@ -681,11 +667,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710452768258</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Created the README.md">
+      <option name="closed" value="true" />
+      <created>1710457844822</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1710457844823</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="does this make any difference." />
     <MESSAGE value="packages.txt is gone" />
     <MESSAGE value="installing libgl1-mesa-glx" />
     <MESSAGE value="Didnt work. Have to find alternative method" />
@@ -710,7 +703,8 @@
     <MESSAGE value="Rearranged file structure and began implementation of prediction model and lime model." />
     <MESSAGE value="Deleted app.py and tkinterapp.py. Finished the main GUI and app." />
     <MESSAGE value="Added description.png and icon.ico to git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added description.png and icon.ico to git" />
+    <MESSAGE value="Created the README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
