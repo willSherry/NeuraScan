@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Deleted app.py and tkinterapp.py. Finished the main GUI and app.">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Added description.png and icon.ico to git">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neurascan_photo.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuraScan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/wave_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +49,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/preprocess_data.py" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -57,31 +63,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.GUI (1).executor": "Run",
-    "Python.GUI.executor": "Run",
-    "Python.NeuraScan (1).executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.lime_integration.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.model_test.executor": "Debug",
-    "Python.preprocess_data.executor": "Run",
-    "Python.preprocess_image.executor": "Run",
-    "Python.skull_stripping.executor": "Run",
-    "Python.tkinterapp.executor": "Run",
-    "Python.train_model.executor": "Run",
-    "Python.wsgi.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Final Year Project/Project/NeuraScan/GUI",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.GUI (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.NeuraScan (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lime_integration.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_test.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.preprocess_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess_image.executor&quot;: &quot;Run&quot;,
+    &quot;Python.skull_stripping.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tkinterapp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wsgi.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Final Year Project/Project/NeuraScan/GUI&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Final Year Project\Project\NeuraScan\GUI" />
@@ -282,14 +288,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Created model_test.py to preprocess and test the model on individual images. Came across an issue when I did this, however. The predictions are coming out totally wrong. Need to see if its a problem with the model testing code or an issue with the model itself.">
-      <option name="closed" value="true" />
-      <created>1707666197700</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1707666197700</updated>
     </task>
     <task id="LOCAL-00008" summary="Removed the preprocessing of the preprocessing of the single image as an experiment, and now the model is making perfect predictions. removing noise and normalizing intensity seemed to work just fine for the training data and improved accuracy there, but doing it for the subject image seems to ruin the prediction. Strange.">
       <option name="closed" value="true" />
@@ -675,11 +673,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710361653604</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Added description.png and icon.ico to git">
+      <option name="closed" value="true" />
+      <created>1710452768258</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1710452768258</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="didnt work, made it worse" />
     <MESSAGE value="does this make any difference." />
     <MESSAGE value="packages.txt is gone" />
     <MESSAGE value="installing libgl1-mesa-glx" />
@@ -704,7 +709,8 @@
     <MESSAGE value="Got button hover and click functionality working" />
     <MESSAGE value="Rearranged file structure and began implementation of prediction model and lime model." />
     <MESSAGE value="Deleted app.py and tkinterapp.py. Finished the main GUI and app." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted app.py and tkinterapp.py. Finished the main GUI and app." />
+    <MESSAGE value="Added description.png and icon.ico to git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added description.png and icon.ico to git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
