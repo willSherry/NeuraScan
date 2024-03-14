@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Rearranged file structure and began implementation of prediction model and lime model.">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Deleted app.py and tkinterapp.py. Finished the main GUI and app.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkinterapp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuraScan.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,30 +57,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.GUI (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.GUI.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lime_integration.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.model_test.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.preprocess_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.preprocess_image.executor&quot;: &quot;Run&quot;,
-    &quot;Python.skull_stripping.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tkinterapp.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
-    &quot;Python.wsgi.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Final Year Project/Project/NeuraScan/GUI&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.GUI (1).executor": "Run",
+    "Python.GUI.executor": "Run",
+    "Python.NeuraScan (1).executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.lime_integration.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.model_test.executor": "Debug",
+    "Python.preprocess_data.executor": "Run",
+    "Python.preprocess_image.executor": "Run",
+    "Python.skull_stripping.executor": "Run",
+    "Python.tkinterapp.executor": "Run",
+    "Python.train_model.executor": "Run",
+    "Python.wsgi.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Final Year Project/Project/NeuraScan/GUI",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Final Year Project\Project\NeuraScan\GUI" />
@@ -95,8 +94,8 @@
       <recent name="D:\Final Year Project\Project\NeuraScan\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GUI (1)">
-    <configuration name="GUI (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.NeuraScan (1)">
+    <configuration name="NeuraScan (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuraScan" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,7 +108,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeuraScan.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +117,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="NeuraScan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NeuraScan" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\Final Year Project\Project\NeuraScan\NeuraScan.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NeuraScan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NeuraScan" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,7 +152,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\Final Year Project\Project\NeuraScan\GUI.py" />
+      <option name="SCRIPT_NAME" value="D:\Final Year Project\Project\NeuraScan\NeuraScan.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -230,19 +251,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.GUI (1)" />
-      <item itemvalue="Python.GUI" />
+      <item itemvalue="Python.NeuraScan (1)" />
+      <item itemvalue="Python.NeuraScan" />
       <item itemvalue="Python.tkinterapp" />
       <item itemvalue="Python.model_test" />
       <item itemvalue="Python.wsgi" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.GUI (1)" />
-        <item itemvalue="Python.GUI" />
+        <item itemvalue="Python.NeuraScan (1)" />
+        <item itemvalue="Python.NeuraScan" />
+        <item itemvalue="Python.NeuraScan" />
         <item itemvalue="Python.tkinterapp" />
         <item itemvalue="Python.wsgi" />
-        <item itemvalue="Python.model_test" />
       </list>
     </recent_temporary>
   </component>
@@ -261,14 +282,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Finished preprocessing, fixed issue with the memory, successfully got it into a format that the model could train from, got 97% accuracy with 93% validation accuracy.">
-      <option name="closed" value="true" />
-      <created>1707435880557</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1707435880557</updated>
     </task>
     <task id="LOCAL-00007" summary="Created model_test.py to preprocess and test the model on individual images. Came across an issue when I did this, however. The predictions are coming out totally wrong. Need to see if its a problem with the model testing code or an issue with the model itself.">
       <option name="closed" value="true" />
@@ -654,11 +667,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710246706465</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Deleted app.py and tkinterapp.py. Finished the main GUI and app.">
+      <option name="closed" value="true" />
+      <created>1710361653604</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1710361653604</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Still having issues, experimenting with packages.txt" />
     <MESSAGE value="didnt work, made it worse" />
     <MESSAGE value="does this make any difference." />
     <MESSAGE value="packages.txt is gone" />
@@ -683,7 +703,8 @@
     <MESSAGE value="Desktop GUI finished" />
     <MESSAGE value="Got button hover and click functionality working" />
     <MESSAGE value="Rearranged file structure and began implementation of prediction model and lime model." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rearranged file structure and began implementation of prediction model and lime model." />
+    <MESSAGE value="Deleted app.py and tkinterapp.py. Finished the main GUI and app." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted app.py and tkinterapp.py. Finished the main GUI and app." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
