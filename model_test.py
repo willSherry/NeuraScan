@@ -9,7 +9,7 @@ from keras.models import load_model
 from PIL import Image
 
 import lime_integration
-from preprocess_data import preprocess_image
+from preprocess_data import intensity_normalization, noise_removal
 
 project_directory = os.getcwd()
 test_data_directory = os.path.join(project_directory, 'TestData')
@@ -23,6 +23,7 @@ def predict_single_image(model, image_path):
     img = img.resize((128, 128))
     img = np.asarray(img)
     img = img / 255.0
+    img = intensity_normalization(img)
 
     # CHECK IF IT ALREADY HAS ALL THE DIMS BEFORE DOING THIS
     if img.shape[-1] == 128:

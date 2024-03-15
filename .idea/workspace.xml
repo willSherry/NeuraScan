@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Made correction to README.md">
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Put image preprocessing in model_test.py and took it out of NeuraScan.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuraScan.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuraScan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,14 +285,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working">
-      <option name="closed" value="true" />
-      <created>1708436285693</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1708436285693</updated>
     </task>
     <task id="LOCAL-00011" summary="Created the web app via streamlit. Website is in basic functional order!">
       <option name="closed" value="true" />
@@ -679,11 +670,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710458078750</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Put image preprocessing in model_test.py and took it out of NeuraScan.py">
+      <option name="closed" value="true" />
+      <created>1710490833228</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1710490833228</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="installing libgl1-mesa-glx" />
     <MESSAGE value="Didnt work. Have to find alternative method" />
     <MESSAGE value="Reworked requirements.txt" />
     <MESSAGE value="Just praying at this point" />
@@ -708,7 +706,8 @@
     <MESSAGE value="Added description.png and icon.ico to git" />
     <MESSAGE value="Created the README.md" />
     <MESSAGE value="Made correction to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made correction to README.md" />
+    <MESSAGE value="Put image preprocessing in model_test.py and took it out of NeuraScan.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Put image preprocessing in model_test.py and took it out of NeuraScan.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
