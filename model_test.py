@@ -17,31 +17,29 @@ def load_trained_model(model_path):
     model = load_model(model_path)
     return model
 
-def preprocess_single_image(image_path):
-    if type(image_path) == str:
-        image_path = cv2.imread(image_path)
-    array_data = np.asarray(image_path)
-
-    target_size = (128, 128)
-
-    preprocessed_image = cv2.resize(array_data, target_size)
-    preprocessed_image = np.array(preprocessed_image) / 255.0
-    preprocessed_image = np.expand_dims(preprocessed_image, axis=0)
-    preprocessed_image = np.repeat(preprocessed_image, 1, axis=-1)
-
-    return preprocessed_image
-
 def predict_single_image(model, image_path):
 
-    #preprocessed_image = preprocess_single_image(image_path)
-    predictions = model.predict(image_path  )
+    img = Image.open(image_path)
+    img = img.resize((128, 128))
+    img = np.asarray(img)
+    img = img / 255.0
+
+    # CHECK IF IT ALREADY HAS ALL THE DIMS BEFORE DOING THIS
+    if img.shape[-1] == 128:
+        img = np.expand_dims(img, axis=-1)
+    if img.shape[0] == 128:
+        img = np.expand_dims(img, axis=0)
+    if img.shape[-1] != 3:
+        img = np.repeat(img, 3, axis=3)
+
+    predictions = model.predict(img)
 
     class_labels = ['MildDemented', 'ModerateDemented', 'NonDemented', 'VeryMildDemented'] 
     predicted_class_index = np.argmax(predictions)
     predicted_class_label = class_labels[predicted_class_index]
     confidence = predictions[0][predicted_class_index]
 
-    return predicted_class_label, confidence
+    return predicted_class_label, confidence, img
 
 if __name__ == "__main__":
     model_path = os.path.join(project_directory,"classificationModel.keras")

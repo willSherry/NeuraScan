@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Created the README.md" />
+    <list default="true" id="3681789d-c21e-4cae-ae75-04458a9aaebc" name="Changes" comment="Made correction to README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuraScan.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuraScan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,11 +254,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.NeuraScan (1)" />
       <item itemvalue="Python.NeuraScan" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.model_test" />
       <item itemvalue="Python.tkinterapp" />
+      <item itemvalue="Python.model_test" />
       <item itemvalue="Python.wsgi" />
     </list>
     <recent_temporary>
@@ -282,14 +286,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706008486969</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Removed main.py, don't need it anymore as the preprocessing and training/creation of the model have been split into two separate files. Added LIME integration and testing for the LIME file in model_test.py.">
-      <option name="closed" value="true" />
-      <created>1707920713564</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1707920713564</updated>
     </task>
     <task id="LOCAL-00010" summary="Fixed issue with python not recognising tensorflow and keras. Began creation of the web page and web page functionality. Current issue is with the fetch request in index.html not working">
       <option name="closed" value="true" />
@@ -675,11 +671,18 @@
       <option name="project" value="LOCAL" />
       <updated>1710457844823</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Made correction to README.md">
+      <option name="closed" value="true" />
+      <created>1710458078750</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1710458078750</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="packages.txt is gone" />
     <MESSAGE value="installing libgl1-mesa-glx" />
     <MESSAGE value="Didnt work. Have to find alternative method" />
     <MESSAGE value="Reworked requirements.txt" />
@@ -704,17 +707,11 @@
     <MESSAGE value="Deleted app.py and tkinterapp.py. Finished the main GUI and app." />
     <MESSAGE value="Added description.png and icon.ico to git" />
     <MESSAGE value="Created the README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the README.md" />
+    <MESSAGE value="Made correction to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made correction to README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/model_test.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

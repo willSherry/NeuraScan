@@ -234,20 +234,7 @@ def upload_file():
         please_wait_text()
         print("Uploaded file path:", file_path)
 
-        img = Image.open(file_path)
-        img = img.resize((128, 128))
-        img = np.asarray(img)
-        img = img / 255.0
-
-        # CHECK IF IT ALREADY HAS ALL THE DIMS BEFORE DOING THIS
-        if img.shape[-1] == 128:
-            img = np.expand_dims(img, axis=-1)
-        if img.shape[0] == 128:
-            img = np.expand_dims(img, axis=0)
-        if img.shape[-1] != 3:
-            img = np.repeat(img, 3, axis=3)
-
-        prediction, confidence = predict_single_image(model, img)
+        prediction, confidence, img = predict_single_image(model, file_path)
 
         if prediction == "MildDemented":
             prediction = "Mild Demented"
